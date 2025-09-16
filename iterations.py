@@ -127,3 +127,5 @@
 #     temp = temp // 10
 # print(count)
 
+26
+print(26%6)

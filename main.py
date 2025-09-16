@@ -1,16 +1,18 @@
-# This is a sample Python script.
+left,right= 1,22
+output=[]
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+while right>0:
+    digit=right%10
+    if right%digit==0 and digit!=0:
+        output.append(digit)
+    right=right//10
+    print(output)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+while left>0:
+    digit=right%10
+    if digit==0:
+        break
+    if right%digit==0 and digit!=0:
+        output.append(digit)
+    right=right//10
+    print(output)
